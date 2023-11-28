@@ -19,6 +19,10 @@ def route():
 def cc():
     return "Hello Cloud Computing, this is a Dockerised Flask"
 
+@app.route("/gcp")
+def gcp():
+    return "Hello from Google Cloud Platform, this is a Dockerised Flask"
+
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0',port='8080')
